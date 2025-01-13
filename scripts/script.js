@@ -19,24 +19,24 @@ characterButtons.forEach( characterButton => {
 
 
 function addCharacterToList(event) {
-  // clone img and add img to first empty slot
+  // determine first empty slot
+  const firstEmptySLot = teamList.querySelector("li:empty");
+  
+  // clone img
   const characterButton = event.currentTarget;
   const characterImg = characterButton.querySelector("img");
   const characterName = characterImg.alt;
   const characterImgClone = characterImg.cloneNode();
-
-  const firstEmptySLot = teamList.querySelector("li:empty");
-
-  firstEmptySLot.appendChild(characterImgClone);
-
-  // create delete button 
+  
+  // create delete button   
   const deleteButton = document.createElement("button");
   deleteButton.ariaLabel = `verwijder ${characterName}`;
-
   // CLICK ON DELETE BUTTON
   deleteButton.addEventListener("click", deleteCharacterFromList );
 
-  // add button to slot
+  //add img to first empty slot
+  firstEmptySLot.appendChild(characterImgClone);
+  // add button to first empty slot
   firstEmptySLot.appendChild(deleteButton);
 
   // update counter and progress
@@ -67,13 +67,13 @@ function deleteCharacterFromList(event) {
 
 
 function updateTeamCounterAndProgress(delta) {
-  // update prgress
-  teamProgress.value = teamProgress.value + delta;
-
   // update counter
   const currentCount = teamCounter.textContent;
   const newCount = currentCount - delta;
   teamCounter.textContent = newCount;
+  
+  // update prgress
+  teamProgress.value = teamProgress.value + delta;
 }
 
 
@@ -82,14 +82,16 @@ function updateInteractivityOfList() {
   const openSLot = teamList.querySelector("li:empty");
 
   if(openSLot) {
-    characterButtons.forEach(characterButton => {
-      characterButton.disabled = false;
-    });
+    toggleDisability(false)
   } else {
-    characterButtons.forEach(characterButton => {
-      characterButton.disabled = true;
-    });
+    toggleDisability(true)
   }
+}
+
+function toggleDisability (isDisabled) {
+  characterButtons.forEach(characterButton => {
+      characterButton.disabled = isDisabled;
+  });
 }
 
 

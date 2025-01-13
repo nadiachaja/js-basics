@@ -1,36 +1,29 @@
-> _Fork_ deze leertaak en ga aan de slag.
-> De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/url-naar-online-instructions)
-
-
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+JS Challenge - Toevoegen Verwijderen Tellen
 
-## Inhoudsopgave
+## Deek 1 - Toevoegen Verwijderen Tellen
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
 
-## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+### Stap 1a - Op alle Character buttons kunnen klikken
 
-## Gebruik
-<!- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+- zoek met querySelectorAll in de character-section's alle buttons op
+- met forEach aan alle button een evenListener toevoegen
+- daarin de functie addCharacterToList aanroepen
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+### Stap 1b - Het character toevoegen aan het team
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+- zoek met querySelector in de team-section section de lijst (ul) op
+-
+
+
+
+
+
+
+## Deel 2 - Scrollen door lijsten
+
 
 ## Bronnen
 
-## Licentie
-
-This project is licensed under the terms of the [MIT license](./LICENCE).
+icons: https://www.flaticon.com/packs/fairytale-42
 

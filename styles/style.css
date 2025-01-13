@@ -196,6 +196,8 @@ button {
     &:not( :has(> :empty) ) {
       background-color:var(--bg-teamlist-complete);
       transform:perspective(60em) rotateX(2turn);
+
+      animation: complete 1s;
     }
   }
 
@@ -263,7 +265,11 @@ button {
   }
 }
 
-
+@keyframes complete {
+  to {
+    opacity:.5;
+  }
+}
 
 
 

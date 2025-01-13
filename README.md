@@ -13,7 +13,17 @@ JS Challenge - Toevoegen Verwijderen Tellen
 ### Stap 1b - Het character toevoegen aan het team
 
 - zoek met querySelector in de team-section section de lijst (ul) op
--
+
+in de addCharacterToList functie
+
+- sla de button waarop geklikt is op (event.currentTarget)
+- zoek in de button de img op
+- zoek de naam van het character op (de alt van de img)
+- maak een clone van in img
+
+- zoek in de lijst de eerste lege li op (:empty)
+- voeg de clone toe aan de gevinden li
+
 
 
 

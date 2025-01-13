@@ -1,0 +1,63 @@
+/**********/
+/* BASICS */
+/**********/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+  accent-color:var(--accent-color);
+}
+
+
+body {
+  height:100dvh;
+  margin:0;
+  padding-block:1em;
+
+  display:flex;
+  flex-direction:column;
+  gap:1em;
+
+  background: var(--gradient);
+
+  overflow-x:clip;
+}
+
+h1, h2 {
+  margin:0;
+
+  font-family:"Saira Semi Condensed", sans-serif;
+  font-weight:300;
+  line-height:1;
+}
+
+h1 {
+  font-size:2em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.25rem + 1.25vmin, 2rem);
+}
+
+p {
+  margin:0;
+}
+
+button {
+  appearance:none;
+  border:none;
+  font-size:1em;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  &:focus-visible {
+    outline:dashed .15em currentColor;
+    outline-offset:-.2em;
+  }
+
+  &:active:not(:disabled) {
+    translate:0 1px;
+  }
+}

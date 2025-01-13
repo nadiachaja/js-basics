@@ -1,0 +1,32 @@
+/**********/
+/* COLORS */
+/**********/
+
+:root {
+  --gradient:linear-gradient(in oklch, MediumPurple, LightSkyBlue);
+  --color:#333;
+
+  --accent-color:Lime;
+
+  --bg-teamlist:#fff;
+  --bg-teamlist-complete:var(--accent-color);
+
+  --bg-teammember:#fff;
+  --color-teammember:LightSkyBlue;
+  --color-teammember-complete:var(--accent-color);
+
+  --bg-button:#fff;
+  --color-button-disabled:#666;
+  --bg-button-disabled:#ccc;
+
+  --bg-button-danger:crimson;
+  --color-button-danger:#fff;
+
+  --bg-listbutton:#333;
+  --color-listbutton:#fff;
+  --bg-listbutton-disabled:#333;
+  --color-listbutton-disabled:#999;
+
+  --bg-scrollthumb:#333;
+  --bg-scrolltrack:transparent;
+}

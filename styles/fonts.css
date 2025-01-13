@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Saira Semi Condensed";
+  src: url("../fonts/Saira_SemiCondensed-Light.ttf");
+  font-weight: 300;
+}

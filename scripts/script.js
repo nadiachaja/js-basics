@@ -44,6 +44,9 @@ function addCharacterToList(event) {
 
   // update interactivity of list
   updateInteractivityOfList();
+
+  // update completeness of team
+  updateCompletenessOfTeam();
 }
 
 
@@ -62,6 +65,9 @@ function deleteCharacterFromList(event) {
 
   // update interactivity of list
   updateInteractivityOfList();
+
+  // update completeness of team
+  updateCompletenessOfTeam();
 }
 
 
@@ -93,6 +99,20 @@ function toggleDisability (isDisabled) {
       characterButton.disabled = isDisabled;
   });
 }
+
+
+
+function updateCompletenessOfTeam() {
+  const openSLot = teamList.querySelector("li:empty");
+
+  if (openSLot) {
+    teamList.classList.remove("is-complete");
+  }
+  else {
+    teamList.classList.add("is-complete");
+  }
+}
+
 
 
 

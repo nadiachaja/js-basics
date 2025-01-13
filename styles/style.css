@@ -163,9 +163,11 @@ button {
   /* PROGRESS */
 
   progress {
+    color-scheme:dark;
+
     grid-area:progress;
     justify-self:center;
-    width:100%;
+    width:100%;    
   }
 
   /* TEAM LIST */

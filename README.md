@@ -1,5 +1,4 @@
-# Titel
-JS Challenge - Toevoegen Verwijderen Tellen
+# JS Challenge - Toevoegen Verwijderen Tellen Scrollen
 
 
 <hr>

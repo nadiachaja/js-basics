@@ -119,7 +119,7 @@ in de functie updateCompletenessOfTeam:
 - zoek in de teamList de eerste lege li op (:empty)
   - als er een leeg slot gevonden wordt is het team niet compleet
   - als er geen leeg slot gevonden wordt is het team compleet
-- als het team compleet is voeg dan de class (is-compleet) toe aan de teamList (classList)
+- als het team compleet is voeg dan de class (is-complete) toe aan de teamList (classList)
 - als het team niet compleet is verwijder dan de class (is-complete) van de teamList (classList)
 
 

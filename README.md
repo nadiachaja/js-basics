@@ -120,7 +120,7 @@ in de functie updateCompletenessOfTeam:
   - als er een leeg slot gevonden wordt is het team niet compleet
   - als er geen leeg slot gevonden wordt is het team compleet
 - als het team compleet is voeg dan de class (is-compleet) toe aan de teamList (classList)
-- als het team niet compleet is verwijder dan de class (is-compleet) van de teamList (classList)
+- als het team niet compleet is verwijder dan de class (is-complete) van de teamList (classList)
 
 
 <hr>

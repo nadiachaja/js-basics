@@ -12,13 +12,13 @@ const teamProgress = document.querySelector("progress");
 
 // CLICK ON CHARACTER BUTTON
 characterButtons.forEach( characterButton => {
-  characterButton.addEventListener("click", addCharacterToList);
+  characterButton.addEventListener("click", addCharacterToTeam);
 });
 
 
 
 
-function addCharacterToList(event) {
+function addCharacterToTeam(event) {
   // determine first empty slot
   const firstEmptySLot = teamList.querySelector("li:empty");
   
@@ -32,7 +32,7 @@ function addCharacterToList(event) {
   const deleteButton = document.createElement("button");
   deleteButton.ariaLabel = `verwijder ${characterName}`;
   // CLICK ON DELETE BUTTON
-  deleteButton.addEventListener("click", deleteCharacterFromList );
+  deleteButton.addEventListener("click", deleteCharacterFromTeam );
 
   //add img to first empty slot
   firstEmptySLot.appendChild(characterImgClone);
@@ -43,7 +43,7 @@ function addCharacterToList(event) {
   updateTeamCounterAndProgress(1);
 
   // update interactivity of list
-  updateInteractivityOfList();
+  updateInteractivityOfLists();
 
   // update completeness of team
   updateCompletenessOfTeam();
@@ -51,7 +51,7 @@ function addCharacterToList(event) {
 
 
 
-function deleteCharacterFromList(event) {
+function deleteCharacterFromTeam(event) {
   // get and then delete button and image
   const deleteButton = event.currentTarget;
   const slot = deleteButton.closest("li");
@@ -64,7 +64,7 @@ function deleteCharacterFromList(event) {
   updateTeamCounterAndProgress(-1);
 
   // update interactivity of list
-  updateInteractivityOfList();
+  updateInteractivityOfLists();
 
   // update completeness of team
   updateCompletenessOfTeam();
@@ -84,7 +84,7 @@ function updateTeamCounterAndProgress(delta) {
 
 
 
-function updateInteractivityOfList() {
+function updateInteractivityOfLists() {
   const openSLot = teamList.querySelector("li:empty");
 
   if (openSLot) {
